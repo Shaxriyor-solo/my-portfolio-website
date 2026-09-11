@@ -1,0 +1,49 @@
+{
+  // 🔥 Save bosilganda auto format
+  "editor.formatOnSave": true,
+
+  // 🔥 Default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 🔥 ESLint auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // 🔥 Tab sozlamalari
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // 🔥 Prettier sozlamalari
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 100,
+  "prettier.trailingComma": "es5",
+
+  // 🔥 JS / TS
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // 🔥 React (JSX / TSX)
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // 🔥 HTML / CSS / JSON
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
