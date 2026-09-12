@@ -1,3 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.home-section,
+.about-section,
+.contact-section {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000000;
   font-family:
@@ -25,6 +36,16 @@ body {
   box-sizing: border-box;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-left: 20px;
+  transform: translateY(-50px);
+}
+
 .title {
   color: #ffffff;
   font-size: 30px;
@@ -34,14 +55,23 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 0 30px;
+  margin: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
 
-  z-index: 1;
+  background-color: #000000;
+  z-index: 1000;
 }
-
 .navbar {
   display: flex;
   gap: 50px;
@@ -81,21 +111,13 @@ body {
   position: absolute;
 }
 
-.robot-3d {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.robot-3d spline-viewer {
-  position: relative;
-  z-index: 2;
-}
-
 /* HOME */
-.main {
+.home-section {
   display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 10px;
+  box-sizing: border-box;
 }
 
 .content {
@@ -183,4 +205,122 @@ body {
 .icons a:hover {
   color: #bebbbb;
   transform: scale(1.15);
+}
+
+.robot-3d {
+  width: 60%;
+  height: 600px;
+  position: relative;
+
+  transform: translateY(-90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robot-3d spline-viewer {
+  width: 750px;
+  height: 750px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.abutu-content {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.about-title {
+  color: #ffffff;
+}
+
+.about-main-title {
+  color: #ffffff;
+}
+
+.about-description {
+  color: #ffffff;
+}
+
+.skills {
+  width: fit-content;
+  color: #000000;
+  border: 1px solid #bebbbb;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+/* STATUS */
+.stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 30px;
+}
+
+.stat {
+  padding-right: 35px;
+  border-right: 1px solid #424141;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat span {
+  color: #6c01ff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.stat p {
+  color: #ffffff;
+  margin: 0;
+  font-weight: bold;
+}
+
+.stat small {
+  color: #8b8b8b;
+}
+
+.logo-3d {
+  display: flex;
+  gap: 30px;
+}
+
+.logo-3d img {
+  width: 50px;
+  height: 50px;
+}
+
+.about-robo-3d {
+  width: 50%;
+  height: 550px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-robo-3d spline-viewer {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-backgraund {
+  position: absolute;
+  width: 450px;
+  z-index: 1;
 }
