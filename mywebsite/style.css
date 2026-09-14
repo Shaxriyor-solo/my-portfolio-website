@@ -324,3 +324,144 @@ body {
   width: 450px;
   z-index: 1;
 }
+
+/* CONTACT */
+.contact-section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 0 70px;
+  box-sizing: border-box;
+}
+
+.contact-content {
+  width: 50%;
+}
+
+.contact-title {
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin: 0 0 20px;
+}
+
+.contact-main-title {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.contact-text {
+  color: #8b8b8b;
+  font-size: 20px;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.contact-icons a i {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.contact-icons a:hover,
+.contact-icons a:hover i {
+  color: #5b00ff;
+}
+
+/* FORM */
+.contact-form {
+  width: 70%;
+}
+
+.contact-form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #5b00ff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #5b00ff33;
+  box-sizing: border-box;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-box label {
+  color: #ffffff;
+}
+
+.input-box input,
+.input-box textarea {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border: 1px solid #424141;
+  border-radius: 10px;
+  padding: 12px;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.input-box input {
+  height: 45px;
+}
+
+.input-box textarea {
+  height: 130px;
+  resize: none;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  border-color: #5b00ff;
+}
+
+.send-btn {
+  width: fit-content;
+  padding: 12px 20px;
+  background-color: transparent;
+  color: #5b00ff;
+  border: 1px solid #5b00ff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.send-btn:hover {
+  background-color: #5b00ff;
+  color: #ffffff;
+  box-shadow: 0 0 10px #5b00ff;
+}

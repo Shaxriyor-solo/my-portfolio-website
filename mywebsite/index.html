@@ -6,20 +6,25 @@
     <title>ShaxCode</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <h1 class="title" href="index.html">SHAXCODE</h1>
+        <h1 class="title" href="index.html" data-aos="fade-down" data-aos-duration="1500">
+          SHAXCODE
+        </h1>
 
         <div class="navbar">
-          <a href="#home">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#contact">CONTACT</a>
+          <a data-aos="fade-down" data-aos-duration="1500" href="#home">HOME</a>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#about">ABOUT</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#contact">CONTACT</a>
         </div>
 
-        <button class="button" id="button">HIRE ME</button>
+        <button class="button" id="button" data-aos="fade-down" data-aos-duration="1500">
+          HIRE ME
+        </button>
       </header>
 
       <!-- HOME SECTION -->
@@ -29,7 +34,7 @@
           <h1 class="main-title">Frontend Developer</h1>
           <p class="description">I build modern, responsive and interactive websites.</p>
           <div class="box">
-            <p class="status">● Available for freelance</p>
+            <p class="status">● Available for freelance &gt</p>
             <button class="home-btn">View My Work →</button>
           </div>
 
@@ -58,13 +63,6 @@
             url="https://prod.spline.design/qtdPabdG-1oRDwpU/scene.splinecode"
           ></spline-viewer>
         </div>
-        <!-- <script
-            type="module"
-            src="https://cdn.spline.design/@splinetool/viewer@2.0.44/build/spline-viewer.js"
-          ></script>
-          <spline-viewer
-            url="https://prod.spline.design/UcrTEx1-pEfkh44Y/scene.splinecode"
-          ></spline-viewer> -->
       </section>
 
       <!-- ABOUT SECTION  -->
@@ -125,8 +123,64 @@
           </div>
         </div>
       </section>
-    </div>
 
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact-section">
+        <div class="contact">
+          <div class="contact-content">
+            <h4 class="contact-title">CONTACT</h4>
+            <h1 class="contact-main-title">LET'S TALK</h1>
+            <p class="contact-text">
+              Have a project in mind? Let's build something great together.
+            </p>
+
+            <div class="contact-icons">
+              <a href="mailto:shaxriyoruzokov0@email.com">
+                <i class="bx bx-envelope"></i>
+                <span>shaxriyoruzokov0@email.com</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/shaxriyor-uzokov-a7b288436/">
+                <i class="bx bxl-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="https://github.com/Shaxriyor-solo">
+                <i class="bx bxl-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <div class="contact-form">
+              <form class="contact-form-inner">
+                <div class="input-box">
+                  <label>Name</label>
+                  <input type="text" placeholder="Your name" />
+                </div>
+
+                <div class="input-box">
+                  <label>Email</label>
+                  <input type="email" placeholder="Your email" />
+                </div>
+
+                <div class="input-box">
+                  <label>Message</label>
+                  <textarea placeholder="Tell me about your project..."></textarea>
+                </div>
+
+                <button type="submit" class="send-btn">SEND MESSAGE →</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="app.js"></script>
   </body>
 </html>
